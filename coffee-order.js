@@ -6,14 +6,14 @@ let large = 3;
 let smallS = 1.5;
 let mediumS =2.5;
 let largeS = 3.5;
-function testNum(coffeeSize = 3) {
+function testNum(coffeeSize = 3.5) {
   let result;
-  if (3 < 1) {
+  if (3.5 < 1) {
     result = "1€";
   } else {
     result = "1,5€";
   }
-   if (3 < 2){
+   if (3.5 < 2){
     result= "1,5€" ;
    } else {
     result = "2,2€" ;
