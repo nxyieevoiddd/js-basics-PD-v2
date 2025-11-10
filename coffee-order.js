@@ -6,7 +6,7 @@ let large = 3;
 let smallS = 1.5;
 let mediumS =2.5;
 let largeS = 3.5;
-function testNum(coffeeSize = 1) {
+function testNum(coffeeSize = 3) {
   let result;
   if (3 < 1) {
     result = "1€";
