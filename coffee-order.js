@@ -1,23 +1,11 @@
-let coffeeSize   ;
-let addSugar = true;
-let small = 1;
-let medium =2;
-let large = 3;
-let smallS = 1.5;
-let mediumS =2.5;
-let largeS = 3.5;
-function testNum(coffeeSize = 3.5) {
-  let result;
-  if (3.5 < 1) {
-    result = "1€";
-  } else {
-    result = "1,5€";
-  }
-   if (3.5 < 2){
-    result= "1,5€" ;
-   } else {
-    result = "2,2€" ;
-   }
-    return result;
+function getCoffeePrice(coffeeSize, addSugar) {
+  let price = 0;
+  if (coffeeSize === "small") price = 1;
+  else if (coffeeSize === "medium") price = 1.5;
+  else if (coffeeSize === "large") price = 2;
+  if (addSugar) price += 0.2;
+  console.log(`Cena par ${coffeeSize} kafiju${addSugar ? " ar cukuru" : ""}: ${price} EUR`);
 }
-console.log(testNum(3));
+
+getCoffeePrice("large", true);
+getCoffeePrice("small", false);
