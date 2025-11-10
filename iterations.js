@@ -1,11 +1,9 @@
-let str = "";
-for (let i = 17 ; i < 22 ; i++) {
-   str += i;
+for (let i = 17; i <= 21; i++) {
+  console.log("Skaitlis: " + i);
 }
-console.log("skaitlis:" + str);
 
 let n = 16;
-while (n <= 10) {
+while (n <= 21) {
+  console.log(n + " reizes");
   n++;
 }
-console.log(n + "reizes");
